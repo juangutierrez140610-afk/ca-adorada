@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Caña Dorada · Sistema de Gestión Panelera</title>
+  <meta name="description" content="Caña Dorada · Sistema de gestión panelera para trabajadores, producción, inventario, ventas y pagos.">
+  <meta name="theme-color" content="#254d31">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Caña Dorada · Sistema de Gestión Panelera">
+  <meta property="og:description" content="Acceso seguro al sistema de gestión de Caña Dorada.">
+  <meta property="og:image" content="cana-dorada-hero.png">
+  <meta property="og:image:alt" content="Caña de azúcar y panela de Caña Dorada">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Caña Dorada · Sistema de Gestión Panelera">
+  <meta name="twitter:description" content="Acceso seguro al sistema de gestión de Caña Dorada.">
+  <meta name="twitter:image" content="cana-dorada-hero.png">
+  <style>
+    :root{--forest:#254d31;--forest-dark:#173722;--gold:#c99528;--cream:#f8f5ec;--ink:#203027;--muted:#637069;--white:#fff;}
+    *{box-sizing:border-box}
+    html,body{margin:0;min-height:100%;font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--ink);background:#eef2eb}
+    body{display:flex;align-items:center;justify-content:center;min-height:100vh;padding:24px}
+    .shell{width:min(1180px,100%);min-height:690px;background:var(--white);border-radius:28px;overflow:hidden;box-shadow:0 28px 70px rgba(25,45,32,.20);display:grid;grid-template-columns:1.22fr .78fr}
+    .visual{position:relative;overflow:hidden;min-height:690px;background:#263d2a}
+    .visual:before{content:"";position:absolute;inset:0;background-image:linear-gradient(90deg,rgba(19,43,27,.12),rgba(19,43,27,.18) 48%,rgba(255,255,255,.06)),url('cana-dorada-hero.png');background-size:cover;background-position:center;transform:scale(1.02)}
+    .visual:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(23,55,34,.10),rgba(23,55,34,.60));}
+    .brand{position:relative;z-index:2;padding:42px;color:#fff;display:flex;flex-direction:column;height:100%;justify-content:flex-end}
+    .mark{width:62px;height:62px;border-radius:18px;background:rgba(255,255,255,.95);display:grid;place-items:center;color:var(--forest);font-weight:900;font-size:24px;box-shadow:0 12px 30px rgba(0,0,0,.16);margin-bottom:18px}
+    .brand h1{font-family:Georgia,serif;font-size:58px;line-height:.96;margin:0 0 14px;letter-spacing:-1.8px}
+    .brand .gold{color:#f2cf74}
+    .brand p{max-width:580px;margin:0;font-size:18px;line-height:1.55;color:rgba(255,255,255,.92)}
+    .tag{margin-top:28px;display:inline-flex;align-items:center;gap:10px;width:max-content;border:1px solid rgba(255,255,255,.26);padding:10px 14px;border-radius:999px;background:rgba(255,255,255,.10);backdrop-filter:blur(6px);font-size:14px}
+    .panel{padding:48px 42px;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(180deg,#fff,#f9fbf7)}
+    .eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:1.6px;color:var(--forest);font-weight:800;margin-bottom:10px}
+    .panel h2{font-size:34px;line-height:1.08;margin:0 0 12px;color:var(--forest-dark)}
+    .panel p{margin:0;color:var(--muted);line-height:1.55}
+    .features{display:grid;gap:11px;margin:28px 0}
+    .feature{display:flex;align-items:flex-start;gap:12px;padding:13px 14px;border:1px solid #e3e9e1;border-radius:14px;background:#fff}
+    .dot{width:10px;height:10px;flex:0 0 10px;border-radius:50%;background:var(--gold);margin-top:6px}
+    .feature b{display:block;font-size:15px;margin-bottom:2px}.feature span{font-size:13px;color:var(--muted)}
+    .btn{appearance:none;border:0;width:100%;padding:16px 18px;border-radius:14px;background:var(--forest);color:#fff;font-size:17px;font-weight:800;text-decoration:none;text-align:center;display:block;box-shadow:0 12px 26px rgba(37,77,49,.20);transition:.18s transform,.18s box-shadow}
+    .btn:hover{transform:translateY(-1px);box-shadow:0 16px 30px rgba(37,77,49,.24)}
+    .note{margin-top:16px;font-size:12px;color:#7a857d;text-align:center}
+    footer{margin-top:32px;padding-top:18px;border-top:1px solid #e5eae3;font-size:12px;color:#7b867e;line-height:1.45}
+    @media (max-width:900px){.shell{grid-template-columns:1fr;min-height:auto}.visual{min-height:470px}.brand{justify-content:flex-end;padding:30px}.brand h1{font-size:48px}.panel{padding:36px 28px}}
+    @media (max-width:560px){body{padding:10px}.shell{border-radius:20px}.visual{min-height:420px}.brand h1{font-size:42px}.brand p{font-size:16px}.panel{padding:30px 22px}}
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <section class="visual" aria-label="Caña de azúcar y panela">
+      <div class="brand">
+        <div class="mark">CD</div>
+        <h1>Caña <span class="gold">Dorada</span></h1>
+        <p>De nuestra tierra, para un futuro más dulce. Un espacio para administrar la operación panelera de forma clara, segura y organizada.</p>
+        <div class="tag">🌱 Tradición que endulza nuestro campo</div>
+      </div>
+    </section>
+    <section class="panel">
+      <div class="eyebrow">Sistema de gestión panelera</div>
+      <h2>Bienvenido a Caña Dorada</h2>
+      <p>Accede al sistema para administrar trabajadores, pagos, producción, inventario, ventas y cierres mensuales.</p>
+      <div class="features">
+        <div class="feature"><i class="dot"></i><div><b>Acceso seguro</b><span>Ingreso mediante usuario y contraseña.</span></div></div>
+        <div class="feature"><i class="dot"></i><div><b>Control de operación</b><span>Trabajo, producción, inventario y ventas en un solo lugar.</span></div></div>
+        <div class="feature"><i class="dot"></i><div><b>Trazabilidad</b><span>Pagos, préstamos, auditoría y cierres mensuales.</span></div></div>
+      </div>
+      <a class="btn" id="enterBtn" href="https://script.google.com/macros/s/AKfycbzxsMuCd7vBctInoPxChG8zvTXsorhkq9t4-FMtVzuZer-ckzHh5FhOYFe94hJVs8Aj/exec" target="_blank" rel="noopener">Ingresar al sistema</a>
+      <div class="note">Se abrirá Caña Dorada en una nueva pestaña.</div>
+      <footer>© Caña Dorada · Sistema de Gestión Panelera<br>Acceso autorizado únicamente para usuarios registrados.</footer>
+    </section>
+  </main>
+</body>
+</html>
